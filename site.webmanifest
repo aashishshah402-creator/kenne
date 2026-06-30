@@ -1,0 +1,16 @@
+{
+  "name": "Kennebis Hemp - Himalayan Herbal Skincare",
+  "short_name": "Kennebis",
+  "description": "Nepal's first science-backed Himalayan herbal skincare brand.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#faf7f0",
+  "theme_color": "#152615",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64 32x32 24x24 16x16",
+      "type": "image/x-icon"
+    }
+  ]
+}
