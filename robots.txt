@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://kennebis.hemp/sitemap.xml
+Sitemap: https://kennebis.hemp/sitemap-images.xml
