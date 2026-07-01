@@ -1,0 +1,286 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Accessibility Statement — Kenne's Himalayan Herbal Skincare</title>
+  
+  <meta name="description" content="Accessibility Statement of Kennebis Hemp. Review our commitment to inclusive design and accessible digital experiences."/>
+  <link rel="canonical" href="https://kennebis.hemp/accessibility.html"/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#0c1a0c;
+      --forest:#152615;
+      --pine:#1e3d1e;
+      --fern:#2e5e2e;
+      --sage:#587a50;
+      --moss:#7da870;
+      --mist:#b8d4b0;
+      --pale:#e4f0e0;
+      --cream:#f6f2e8;
+      --parchment:#faf7f0;
+      --gold:#b8882e;
+      --text:#1a2e1a;
+      --muted:#5a7054;
+      --border:rgba(94,130,80,.18);
+    }
+    body{
+      background:var(--parchment);
+      color:var(--text);
+      font-family:'Poppins',sans-serif;
+      font-weight:300;
+      line-height:1.6;
+      overflow-x:hidden;
+      position:relative;
+    }
+    
+    /* Grain overlay */
+    body::after{
+      content:'';
+      position:fixed;
+      inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+      pointer-events:none;
+      z-index:9997;
+      opacity:.35;
+    }
+
+    /* Header styling */
+    header{
+      position:absolute;
+      top:0;
+      width:100%;
+      height:90px;
+      z-index:900;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 6vw;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:transparent;
+    }
+    .logo-main{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.4rem;
+      font-weight:900;
+      letter-spacing:.04em;
+      color:#fff;
+    }
+    .logo-main em{
+      color:var(--moss);
+      font-style:normal;
+    }
+    .btn-shop{
+      background:rgba(255,255,255,.1);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.75rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      padding:0.6rem 1.4rem;
+      border-radius:6px;
+      text-decoration:none;
+      transition:all 0.3s;
+      border:1px solid rgba(255,255,255,.2);
+      backdrop-filter:blur(4px);
+    }
+    .btn-shop:hover{
+      background:#fff;
+      color:var(--forest);
+      transform:translateY(-1px);
+    }
+
+    /* Page Hero */
+    .pg-hero{
+      min-height:35vh;
+      background:var(--forest);
+      padding:8rem 6vw 4rem;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .hemp-deco{
+      position:absolute;
+      pointer-events:none;
+      z-index:0;
+      opacity:.07;
+      width:260px;
+      top:-20px;
+      right:3rem;
+      transform:rotate(20deg);
+    }
+    .ew{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.8rem;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:0.15em;
+      color:var(--moss);
+      margin-bottom:0.5rem;
+    }
+    h1{
+      font-family:'Montserrat',sans-serif;
+      font-size:clamp(2rem,4vw,3.5rem);
+      font-weight:900;
+      color:#fff;
+      line-height:1.2;
+    }
+    h1 i{
+      font-family:'Playfair Display', Georgia, serif;
+      font-style:italic;
+      font-weight:400;
+      color:var(--moss);
+    }
+
+    /* Content Area */
+    .content-wrap{
+      padding:5rem 6vw;
+      background:var(--parchment);
+    }
+    .content-inner{
+      max-width:800px;
+      margin:0 auto;
+    }
+    .effective-date{
+      font-style:italic;
+      margin-bottom:2rem;
+      color:var(--muted);
+    }
+    .body-p{
+      margin-bottom:1.5rem;
+      font-size:1rem;
+      color:var(--text);
+      line-height:1.7;
+    }
+    h3{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.35rem;
+      font-weight:900;
+      color:var(--ink);
+      margin-top:2.5rem;
+      margin-bottom:1rem;
+      border-bottom:1.5px solid var(--border);
+      padding-bottom:0.3rem;
+      letter-spacing:0.02em;
+    }
+    ul{
+      margin-bottom:1.5rem;
+      padding-left:1.5rem;
+      list-style-type:square;
+    }
+    li{
+      margin-bottom:0.5rem;
+      color:var(--text);
+      font-size:0.95rem;
+    }
+    a{
+      color:var(--fern);
+      font-weight:600;
+      text-decoration:underline;
+    }
+    a:hover{
+      color:var(--pine);
+    }
+
+    /* Footer */
+    footer{
+      background:var(--forest);
+      color:rgba(255,255,255,.6);
+      padding:3rem 6vw;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.05);
+      font-size:0.85rem;
+    }
+    .footer-links{
+      display:flex;
+      justify-content:center;
+      gap:1.5rem;
+      flex-wrap:wrap;
+      margin-bottom:1.5rem;
+    }
+    .footer-links a{
+      color:rgba(255,255,255,.7);
+      text-decoration:none;
+      font-weight:400;
+    }
+    .footer-links a:hover{
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-main"><em>kennebis</em>.hemp</a>
+    <a href="index.html#shop" class="btn-shop">Back to Shop</a>
+  </header>
+
+  <div class="pg-hero">
+    <svg class="hemp-deco" viewBox="0 0 120 140" fill="none"><g stroke="#7da870" stroke-width="0.7"><path d="M60 80 C60 80 60 55 60 20"/><path d="M60 80 C60 80 35 55 10 40"/><path d="M60 80 C60 80 85 55 110 40"/><path d="M60 55 C60 55 42 35 28 18"/><path d="M60 55 C60 55 78 35 92 18"/><path d="M60 40 C60 40 48 25 38 12"/><path d="M60 40 C60 40 72 25 82 12"/><path d="M60 80 L60 120"/></g></svg>
+    <p class="ew">Accessibility</p>
+    <h1>Accessibility <i>Statement</i></h1>
+  </div>
+
+  <div class="content-wrap">
+    <div class="content-inner">
+      <p class="effective-date">Last Updated: June 24, 2026</p>
+      
+      <p class="body-p">Kennebis Hemp is committed to ensuring digital accessibility for people with disabilities. We are continually improving the user experience for everyone and applying the relevant accessibility standards to make sure our website is usable by all individuals.</p>
+      
+      <h3>Conformance Status</h3>
+      <p class="body-p">The Web Content Accessibility Guidelines (WCAG) defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA. Kennebis Hemp is partially conformant with WCAG 2.1 level AA. Partially conformant means that some parts of the content do not fully conform to the accessibility standard, but we are actively working on resolving any gaps.</p>
+      
+      <h3>Feedback &amp; Contact</h3>
+      <p class="body-p">We welcome your feedback on the accessibility of Kennebis Hemp website. Please let us know if you encounter accessibility barriers:</p>
+      <ul>
+        <li>Phone/WhatsApp: +977-9705205323</li>
+        <li>Email: <a href="mailto:kennebis.info@gmail.com?subject=Accessibility%20Feedback%20-%20Kennebis%20Hemp">kennebis.info@gmail.com</a></li>
+      </ul>
+      <p class="body-p">We aim to respond to accessibility inquiries within 3 business days.</p>
+      
+      <h3>Compatibility with Browsers &amp; Assistive Technologies</h3>
+      <p class="body-p">Kennebis Hemp is designed to be compatible with major modern browsers including Google Chrome, Mozilla Firefox, Apple Safari, and Microsoft Edge. It may not render or interact optimally with outdated browsers or legacy systems.</p>
+      
+      <h3>Technical Specifications</h3>
+      <p class="body-p">Accessibility of Kennebis Hemp website relies on the following technologies to work with the particular combination of web browser and any assistive technologies or plugins installed on your computer:</p>
+      <ul>
+        <li>HTML</li>
+        <li>CSS (Cascading Style Sheets)</li>
+        <li>JavaScript</li>
+      </ul>
+      <p class="body-p">These technologies are relied upon for conformance with the accessibility standards used.</p>
+      
+      <h3>Assessment Approach</h3>
+      <p class="body-p">Kennebis Hemp assessed the accessibility of our website by self-evaluation, reviewing the interface code, color contrasts, interactive tags, and image alternative labels.</p>
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">Our Story</a>
+      <a href="index.html#privacy">Privacy Policy</a>
+      <a href="index.html#terms">Terms & Conditions</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="index.html#shipping">Shipping Policy</a>
+      <a href="index.html#returns">Refund Policy</a>
+      <a href="accessibility.html">Accessibility</a>
+    </div>
+    <p>&copy; 2026 Kennebis Hemp. All Rights Reserved. Crafted with Mountain Soul in Nepal.</p>
+  </footer>
+
+</body>
+</html>

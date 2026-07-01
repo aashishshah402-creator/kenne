@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Page Not Found (404) — Kenne's</title>
+  
+  <meta name="description" content="The page you are looking for does not exist. Return to Kenne's, Nepal's first science-backed Himalayan herbal skincare brand."/>
+  <link rel="canonical" href="https://kennebis.hemp/404.html"/>
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#0c1a0c;
+      --forest:#152615;
+      --pine:#1e3d1e;
+      --fern:#2e5e2e;
+      --sage:#587a50;
+      --moss:#7da870;
+      --pale:#e4f0e0;
+      --parchment:#faf7f0;
+      --text:#1a2e1a;
+      --muted:#5a7054;
+    }
+    body{
+      background:var(--parchment);
+      color:var(--text);
+      font-family:'Poppins',sans-serif;
+      font-weight:300;
+      line-height:1.6;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:2rem;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    
+    /* GRAIN */
+    body::after{
+      content:'';
+      position:fixed;
+      inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+      pointer-events:none;
+      z-index:9997;
+      opacity:.35;
+    }
+
+    .container{
+      max-width:550px;
+      background:rgba(250, 247, 240, 0.7);
+      backdrop-filter:blur(10px);
+      padding:3rem 2rem;
+      border-radius:24px;
+      border:1px solid rgba(94,130,80,.15);
+      box-shadow:0 20px 50px rgba(12,26,12,0.06);
+      position:relative;
+      z-index:10;
+    }
+
+    .emoji{
+      font-size:4.5rem;
+      margin-bottom:1.5rem;
+      display:inline-block;
+      animation:float 3s ease-in-out infinite;
+    }
+
+    h1{
+      font-family:'Montserrat',sans-serif;
+      font-size:2.8rem;
+      font-weight:900;
+      color:var(--forest);
+      margin-bottom:0.5rem;
+      line-height:1.1;
+    }
+
+    h2{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.1rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:0.15em;
+      color:var(--sage);
+      margin-bottom:1.5rem;
+    }
+
+    p{
+      font-size:0.95rem;
+      color:var(--muted);
+      margin-bottom:2rem;
+      font-weight:300;
+    }
+
+    .btn{
+      display:inline-flex;
+      align-items:center;
+      justify-content:center;
+      background:var(--forest);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.75rem;
+      font-weight:800;
+      text-transform:uppercase;
+      letter-spacing:0.1em;
+      padding:1rem 2rem;
+      border-radius:30px;
+      text-decoration:none;
+      transition:background 0.3s, transform 0.2s, box-shadow 0.3s;
+      cursor:pointer;
+      box-shadow:0 10px 20px rgba(21,38,21,0.15);
+      border:none;
+    }
+
+    .btn:hover{
+      background:var(--fern);
+      transform:translateY(-2px);
+      box-shadow:0 12px 24px rgba(46,94,46,0.25);
+    }
+    
+    .btn:active{
+      transform:translateY(0);
+    }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <div class="container" id="error-container">
+    <div class="emoji" id="error-emoji">🌿</div>
+    <h1 id="error-code">404</h1>
+    <h2 id="error-title">Lost in the Highlands</h2>
+    <p id="error-message">
+      The path you are looking for has grown over or does not exist. Let's get you back to safety.
+    </p>
+    <a href="https://kennebis.hemp/" class="btn" id="home-button">Return Home</a>
+  </div>
+</body>
+</html>

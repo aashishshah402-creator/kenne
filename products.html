@@ -1,0 +1,467 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Our Products — Kenne's Himalayan Herbal Skincare</title>
+  
+  <meta name="description" content="Browse our natural collection of Himalayan herbal skincare. Lip balms, Shata Dhauta Ghrita, face oil, and body butter made with high-altitude ingredients."/>
+  <link rel="canonical" href="https://kennebis.hemp/products.html"/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#0c1a0c;
+      --forest:#152615;
+      --pine:#1e3d1e;
+      --fern:#2e5e2e;
+      --sage:#587a50;
+      --moss:#7da870;
+      --mist:#b8d4b0;
+      --pale:#e4f0e0;
+      --cream:#f6f2e8;
+      --parchment:#faf7f0;
+      --gold:#b8882e;
+      --text:#1a2e1a;
+      --muted:#5a7054;
+      --border:rgba(94,130,80,.18);
+    }
+    body{
+      background:var(--parchment);
+      color:var(--text);
+      font-family:'Poppins',sans-serif;
+      font-weight:300;
+      line-height:1.6;
+      overflow-x:hidden;
+      position:relative;
+    }
+    
+    /* Grain overlay */
+    body::after{
+      content:'';
+      position:fixed;
+      inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+      pointer-events:none;
+      z-index:9997;
+      opacity:.35;
+    }
+
+    /* Header styling */
+    header{
+      position:absolute;
+      top:0;
+      width:100%;
+      height:90px;
+      z-index:900;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 6vw;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:transparent;
+    }
+    .logo-main{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.4rem;
+      font-weight:900;
+      letter-spacing:.04em;
+      color:#fff;
+    }
+    .logo-main em{
+      color:var(--moss);
+      font-style:normal;
+    }
+    .btn-shop{
+      background:rgba(255,255,255,.1);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.75rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      padding:0.6rem 1.4rem;
+      border-radius:6px;
+      text-decoration:none;
+      transition:all 0.3s;
+      border:1px solid rgba(255,255,255,.2);
+      backdrop-filter:blur(4px);
+    }
+    .btn-shop:hover{
+      background:#fff;
+      color:var(--forest);
+      transform:translateY(-1px);
+    }
+
+    /* Page Hero */
+    .pg-hero{
+      min-height:35vh;
+      background:var(--forest);
+      padding:8rem 6vw 4rem;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .hemp-deco{
+      position:absolute;
+      pointer-events:none;
+      z-index:0;
+      opacity:.07;
+      width:260px;
+      top:-20px;
+      right:3rem;
+      transform:rotate(20deg);
+    }
+    .ew{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.8rem;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:0.15em;
+      color:var(--moss);
+      margin-bottom:0.5rem;
+    }
+    h1{
+      font-family:'Montserrat',sans-serif;
+      font-size:clamp(2rem,4vw,3.5rem);
+      font-weight:900;
+      color:#fff;
+      line-height:1.2;
+    }
+    h1 i{
+      font-family:'Playfair Display', Georgia, serif;
+      font-style:italic;
+      font-weight:400;
+      color:var(--moss);
+    }
+
+    /* Content Area */
+    .content-wrap{
+      padding:5rem 6vw;
+      background:var(--parchment);
+    }
+    .content-inner{
+      max-width:1100px;
+      margin:0 auto;
+    }
+    .products-grid{
+      display:grid;
+      grid-template-columns:repeat(auto-fill, minmax(280px, 1fr));
+      gap:2.5rem;
+    }
+    .product-card{
+      background:#fff;
+      border:1.5px solid var(--border);
+      border-radius:16px;
+      padding:2rem 1.5rem;
+      display:flex;
+      flex-direction:column;
+      justify-content:space-between;
+      transition:transform 0.3s, box-shadow 0.3s;
+      box-shadow:0 4px 20px rgba(12,26,12,0.01);
+      position:relative;
+    }
+    .product-card:hover{
+      transform:translateY(-3px);
+      box-shadow:0 12px 30px rgba(12,26,12,0.04);
+    }
+    .badge{
+      position:absolute;
+      top:1rem;
+      right:1rem;
+      background:var(--gold);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.6rem;
+      font-weight:900;
+      padding:0.25rem 0.6rem;
+      border-radius:20px;
+      text-transform:uppercase;
+      letter-spacing:0.05em;
+    }
+    .prod-emoji{
+      font-size:3rem;
+      margin-bottom:1rem;
+      line-height:1;
+    }
+    .prod-title{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.15rem;
+      font-weight:900;
+      color:var(--ink);
+      margin-bottom:0.4rem;
+      line-height:1.2;
+    }
+    .prod-ingredients{
+      font-size:0.8rem;
+      color:var(--muted);
+      margin-bottom:1.5rem;
+      font-style:italic;
+      line-height:1.4;
+    }
+    .price-row{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      margin-top:auto;
+      padding-top:1.5rem;
+      border-top:1px solid rgba(94,130,80,0.1);
+    }
+    .price{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.1rem;
+      font-weight:900;
+      color:var(--forest);
+    }
+    .btn-view{
+      background:var(--forest);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.7rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.05em;
+      padding:0.6rem 1rem;
+      border-radius:6px;
+      text-decoration:none;
+      transition:all 0.3s;
+    }
+    .btn-view:hover{
+      background:var(--fern);
+    }
+
+    /* Footer */
+    footer{
+      background:var(--forest);
+      color:rgba(255,255,255,.6);
+      padding:3rem 6vw;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.05);
+      font-size:0.85rem;
+    }
+    .footer-links{
+      display:flex;
+      justify-content:center;
+      gap:1.5rem;
+      flex-wrap:wrap;
+      margin-bottom:1.5rem;
+    }
+    .footer-links a{
+      color:rgba(255,255,255,.7);
+      text-decoration:none;
+      font-weight:400;
+    }
+    .footer-links a:hover{
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-main"><em>kennebis</em>.hemp</a>
+    <a href="index.html#shop" class="btn-shop">Back to Shop</a>
+  </header>
+
+  <div class="pg-hero">
+    <svg class="hemp-deco" viewBox="0 0 120 140" fill="none"><g stroke="#7da870" stroke-width="0.7"><path d="M60 80 C60 80 60 55 60 20"/><path d="M60 80 C60 80 35 55 10 40"/><path d="M60 80 C60 80 85 55 110 40"/><path d="M60 55 C60 55 42 35 28 18"/><path d="M60 55 C60 55 78 35 92 18"/><path d="M60 40 C60 40 48 25 38 12"/><path d="M60 40 C60 40 72 25 82 12"/><path d="M60 80 L60 120"/></g></svg>
+    <p class="ew">Shop</p>
+    <h1>Our Natural <i>Collection</i></h1>
+  </div>
+
+  <div class="content-wrap">
+    <div class="content-inner">
+      
+      <div class="products-grid">
+        
+        <!-- Product 1 -->
+        <div class="product-card">
+          <span class="badge">Bestseller</span>
+          <div class="prod-emoji">✨</div>
+          <div>
+            <h4 class="prod-title">Shata Dhauta Ghirta</h4>
+            <p class="prod-ingredients">Ingredients: Yak Ghee, Rose water, Turmeric, Licorice, Vitamin E</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 550 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 15 gm</span></span>
+            <a href="/#product/shata-dhauta-ghirta-1" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 2 -->
+        <div class="product-card">
+          <div class="prod-emoji">🌸</div>
+          <div>
+            <h4 class="prod-title">Face Oil</h4>
+            <p class="prod-ingredients">Ingredients: Jojoba Oil, Hemp Seed Oil, Rosehip Oil, Tamanu Oil &amp; Healing Herbs</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 1,000 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 30 ml</span></span>
+            <a href="/#product/face-oil-30-ml-2" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 3 -->
+        <div class="product-card">
+          <div class="prod-emoji">🧼</div>
+          <div>
+            <h4 class="prod-title">Anti Acne Face Soap</h4>
+            <p class="prod-ingredients">Ingredients: Green Tea infusion, Lye, Chyuri Butter, Yak Ghee, Aloe Vera &amp; Ayurvedic Herbs</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 250 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 50 gm</span></span>
+            <a href="/#product/anti-acne-face-soap-50-gms-18" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 4 -->
+        <div class="product-card">
+          <span class="badge">Bestseller</span>
+          <div class="prod-emoji">🧈</div>
+          <div>
+            <h4 class="prod-title">Body Butter (Travel Size)</h4>
+            <p class="prod-ingredients">Ingredients: Mango Butter, Chuiri Butter, Hemp Seed Oil &amp; Natural Essence</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 600 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 45 gm</span></span>
+            <a href="/#product/body-butter-45-gms-12" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 5 -->
+        <div class="product-card">
+          <span class="badge">Bestseller</span>
+          <div class="prod-emoji">💄</div>
+          <div>
+            <h4 class="prod-title">Lip Balm</h4>
+            <p class="prod-ingredients">Ingredients: Beeswax, Chuiri Butter, Yak Ghee, Hemp Seed Oil &amp; Natural Essence</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 250 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 8 gm</span></span>
+            <a href="/#product/lip-balm-8-gms-5" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 6 -->
+        <div class="product-card">
+          <span class="badge">Bestseller</span>
+          <div class="prod-emoji">💋</div>
+          <div>
+            <h4 class="prod-title">Lip Care</h4>
+            <p class="prod-ingredients">Ingredients: Beeswax, Chuiri Butter, Yak Ghee, Hemp Seed Oil &amp; Natural Essence</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 300 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 4.5 gm</span></span>
+            <a href="/#product/lip-care-4-5-gms-4" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 7 -->
+        <div class="product-card">
+          <div class="prod-emoji">🩹</div>
+          <div>
+            <h4 class="prod-title">Lip Repair Lip Balm</h4>
+            <p class="prod-ingredients">Ingredients: Beeswax, Chuiri Butter, Yak Ghee, Calendula Extract &amp; Healing Herbs</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 300 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 8 gm</span></span>
+            <a href="/#product/lip-repair-lip-balm-8-gms-7" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 8 -->
+        <div class="product-card">
+          <div class="prod-emoji">💆</div>
+          <div>
+            <h4 class="prod-title">Hair Massage Oil</h4>
+            <p class="prod-ingredients">Ingredients: Sesame Oil, Jojoba Oil, Hemp Seed Oil, Bhringraj, Brahmi, Rosemary &amp; Amla</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 1,000 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 30 ml</span></span>
+            <a href="/#product/herb-infused-hair-massage-oil-30-ml-8" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 9 -->
+        <div class="product-card">
+          <div class="prod-emoji">🧈</div>
+          <div>
+            <h4 class="prod-title">Body Butter (Full Size)</h4>
+            <p class="prod-ingredients">Ingredients: Mango Butter, Chuiri Butter, Hemp Seed Oil &amp; Natural Essence</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 1,550 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 150 gm</span></span>
+            <a href="/#product/body-butter-150-gms-13" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 10 -->
+        <div class="product-card">
+          <div class="prod-emoji">🩹</div>
+          <div>
+            <h4 class="prod-title">Tattoo Care Balm</h4>
+            <p class="prod-ingredients">Ingredients: Jojoba Oil, Hemp Seed Oil, Olive Squalane, Meadowfoam Oil, Chuiri Butter &amp; Beeswax</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 550 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 30 gm</span></span>
+            <a href="/#product/tattoo-care-balm-30-gms-15" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 11 -->
+        <div class="product-card">
+          <div class="prod-emoji">🦶</div>
+          <div>
+            <h4 class="prod-title">Heel &amp; Palm Crack Care Balm</h4>
+            <p class="prod-ingredients">Ingredients: Chuiri Butter, Yak Ghee, Hemp Seed Oil, Calendula Extract &amp; Healing Herbs</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 550 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 30 gm</span></span>
+            <a href="/#product/heel-palm-crack-care-balm-30-gms-14" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+        <!-- Product 12 -->
+        <div class="product-card">
+          <div class="prod-emoji">🫙</div>
+          <div>
+            <h4 class="prod-title">Cold Processed Body Soap</h4>
+            <p class="prod-ingredients">Ingredients: Coconut Oil, Chyuri Butter, Olive Oil, Cocoa Butter, Yak Ghee, Castor Oil &amp; Hemp Seed Oil</p>
+          </div>
+          <div class="price-row">
+            <span class="price">Rs. 350 <span style="font-size:0.75rem;font-weight:400;color:var(--muted)">/ 100 gm</span></span>
+            <a href="/#product/cold-processed-body-soap-100-gms-16" class="btn-view">View Details</a>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">Our Story</a>
+      <a href="index.html#privacy">Privacy Policy</a>
+      <a href="index.html#terms">Terms & Conditions</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="index.html#shipping">Shipping Policy</a>
+      <a href="index.html#returns">Refund Policy</a>
+      <a href="accessibility.html">Accessibility</a>
+    </div>
+    <p>&copy; 2026 Kennebis Hemp. All Rights Reserved. Crafted with Mountain Soul in Nepal.</p>
+  </footer>
+
+</body>
+</html>

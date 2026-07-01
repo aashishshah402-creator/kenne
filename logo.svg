@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <!-- Style definitions for fallback font loading -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&amp;display=swap');
+      .logo-text {
+        font-family: 'Montserrat', 'Helvetica Neue', sans-serif;
+        font-size: 38px;
+        font-weight: 900;
+        letter-spacing: 0.05em;
+        text-anchor: middle;
+      }
+      .logo-sub {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 14px;
+        font-weight: 700;
+        letter-spacing: 0.25em;
+        fill: #5a7054;
+        text-anchor: middle;
+        text-transform: uppercase;
+      }
+    </style>
+  </defs>
+
+  <!-- Background parhment color representation (optional for visibility, but default transparent) -->
+  
+  <!-- Stylized Mountain & Hemp Leaf Silhouette Icon -->
+  <g transform="translate(0, -10)">
+    <!-- Mountain Background Outline -->
+    <path d="M150,280 L250,150 L350,280" fill="none" stroke="#e4f0e0" stroke-width="6" stroke-linejoin="round" stroke-linecap="round" opacity="0.6"/>
+    <path d="M210,280 L270,200 L330,280" fill="none" stroke="#e4f0e0" stroke-width="4" stroke-linejoin="round" stroke-linecap="round" opacity="0.6"/>
+    
+    <!-- Central Stylized Hemp Leaf (5 main lobes + stem) -->
+    <!-- Center Lobe -->
+    <path d="M250,250 C245,210 240,160 250,100 C260,160 255,210 250,250 Z" fill="#2e5e2e"/>
+    
+    <!-- Left Inner Lobe -->
+    <path d="M250,250 C220,225 180,185 170,140 C195,170 230,215 250,250 Z" fill="#587a50"/>
+    
+    <!-- Right Inner Lobe -->
+    <path d="M250,250 C280,225 320,185 330,140 C305,170 270,215 250,250 Z" fill="#587a50"/>
+    
+    <!-- Left Outer Lobe -->
+    <path d="M250,250 C210,245 160,230 130,200 C165,215 215,235 250,250 Z" fill="#7da870"/>
+    
+    <!-- Right Outer Lobe -->
+    <path d="M250,250 C290,245 340,230 370,200 C335,215 285,235 250,250 Z" fill="#7da870"/>
+    
+    <!-- Stem -->
+    <path d="M250,250 L250,290" stroke="#2e5e2e" stroke-width="5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Typography -->
+  <g transform="translate(0, 40)">
+    <!-- Main Logo Text -->
+    <text x="250" y="340" class="logo-text">
+      <tspan fill="#2e5e2e">kennebis</tspan><tspan fill="#0c1a0c">.hemp</tspan>
+    </text>
+    
+    <!-- Subtitle / Tagline -->
+    <text x="254" y="380" class="logo-sub">Himalayan Herbal Skincare</text>
+  </g>
+  
+  <!-- Subtle decorative details -->
+  <circle cx="250" cy="420" r="3" fill="#b8882e"/>
+  <line x1="210" y1="420" x2="235" y2="420" stroke="#rgba(94,130,80,.18)" stroke-width="1"/>
+  <line x1="265" y1="420" x2="290" y2="420" stroke="#rgba(94,130,80,.18)" stroke-width="1"/>
+</svg>

@@ -1,0 +1,401 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>Frequently Asked Questions (FAQ) — Kenne's Himalayan Herbal Skincare</title>
+  
+  <meta name="description" content="Find answers to common questions about Kennebis Hemp skincare products, ingredients, lab testing, shipping, payments, and returns."/>
+  <link rel="canonical" href="https://kennebis.hemp/faq.html"/>
+  
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  
+  <style>
+    *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+    :root{
+      --ink:#0c1a0c;
+      --forest:#152615;
+      --pine:#1e3d1e;
+      --fern:#2e5e2e;
+      --sage:#587a50;
+      --moss:#7da870;
+      --mist:#b8d4b0;
+      --pale:#e4f0e0;
+      --cream:#f6f2e8;
+      --parchment:#faf7f0;
+      --gold:#b8882e;
+      --text:#1a2e1a;
+      --muted:#5a7054;
+      --border:rgba(94,130,80,.18);
+    }
+    body{
+      background:var(--parchment);
+      color:var(--text);
+      font-family:'Poppins',sans-serif;
+      font-weight:300;
+      line-height:1.6;
+      overflow-x:hidden;
+      position:relative;
+    }
+    
+    /* Grain overlay */
+    body::after{
+      content:'';
+      position:fixed;
+      inset:0;
+      background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+      pointer-events:none;
+      z-index:9997;
+      opacity:.35;
+    }
+
+    /* Header styling */
+    header{
+      position:absolute;
+      top:0;
+      width:100%;
+      height:90px;
+      z-index:900;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      padding:0 6vw;
+      border-bottom:1px solid rgba(255,255,255,.08);
+      background:transparent;
+    }
+    .logo-main{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.4rem;
+      font-weight:900;
+      letter-spacing:.04em;
+      color:#fff;
+    }
+    .logo-main em{
+      color:var(--moss);
+      font-style:normal;
+    }
+    .btn-shop{
+      background:rgba(255,255,255,.1);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.75rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      padding:0.6rem 1.4rem;
+      border-radius:6px;
+      text-decoration:none;
+      transition:all 0.3s;
+      border:1px solid rgba(255,255,255,.2);
+      backdrop-filter:blur(4px);
+    }
+    .btn-shop:hover{
+      background:#fff;
+      color:var(--forest);
+      transform:translateY(-1px);
+    }
+
+    /* Page Hero */
+    .pg-hero{
+      min-height:35vh;
+      background:var(--forest);
+      padding:8rem 6vw 4rem;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+      align-items:center;
+      text-align:center;
+      position:relative;
+      overflow:hidden;
+    }
+    .hemp-deco{
+      position:absolute;
+      pointer-events:none;
+      z-index:0;
+      opacity:.07;
+      width:260px;
+      top:-20px;
+      right:3rem;
+      transform:rotate(20deg);
+    }
+    .ew{
+      font-family:'Montserrat',sans-serif;
+      font-size:0.8rem;
+      font-weight:900;
+      text-transform:uppercase;
+      letter-spacing:0.15em;
+      color:var(--moss);
+      margin-bottom:0.5rem;
+    }
+    h1{
+      font-family:'Montserrat',sans-serif;
+      font-size:clamp(2rem,4vw,3.5rem);
+      font-weight:900;
+      color:#fff;
+      line-height:1.2;
+    }
+    h1 i{
+      font-family:'Playfair Display', Georgia, serif;
+      font-style:italic;
+      font-weight:400;
+      color:var(--moss);
+    }
+
+    /* Content Area */
+    .content-wrap{
+      padding:5rem 6vw;
+      background:var(--parchment);
+    }
+    .content-inner{
+      max-width:800px;
+      margin:0 auto;
+    }
+    h3{
+      font-family:'Montserrat',sans-serif;
+      font-size:1.25rem;
+      font-weight:900;
+      color:var(--fern);
+      margin-top:3rem;
+      margin-bottom:1.5rem;
+      border-bottom:1.5px solid var(--border);
+      padding-bottom:0.5rem;
+      letter-spacing:0.02em;
+      text-transform:uppercase;
+    }
+    .faq-item{
+      margin-bottom:2rem;
+    }
+    h4{
+      font-family:'Montserrat',sans-serif;
+      font-size:1rem;
+      font-weight:700;
+      color:var(--ink);
+      margin-bottom:0.5rem;
+    }
+    .body-p{
+      font-size:0.95rem;
+      color:var(--text);
+      line-height:1.7;
+    }
+    a{
+      color:var(--fern);
+      font-weight:600;
+      text-decoration:underline;
+    }
+    a:hover{
+      color:var(--pine);
+    }
+
+    /* Callout Card */
+    .callout-card{
+      background:var(--cream);
+      border:1.5px solid var(--border);
+      border-radius:16px;
+      padding:2rem;
+      text-align:center;
+      margin-top:4rem;
+      box-shadow:0 10px 30px rgba(12,26,12,0.02);
+    }
+    .btn-main{
+      display:inline-block;
+      background:var(--forest);
+      color:#fff;
+      font-family:'Montserrat',sans-serif;
+      font-size:0.8rem;
+      font-weight:700;
+      text-transform:uppercase;
+      letter-spacing:0.08em;
+      padding:0.8rem 2rem;
+      border-radius:6px;
+      text-decoration:none;
+      transition:all 0.3s;
+      margin-top:1.2rem;
+    }
+    .btn-main:hover{
+      background:var(--fern);
+      transform:translateY(-1px);
+    }
+
+    /* Footer */
+    footer{
+      background:var(--forest);
+      color:rgba(255,255,255,.6);
+      padding:3rem 6vw;
+      text-align:center;
+      border-top:1px solid rgba(255,255,255,.05);
+      font-size:0.85rem;
+    }
+    .footer-links{
+      display:flex;
+      justify-content:center;
+      gap:1.5rem;
+      flex-wrap:wrap;
+      margin-bottom:1.5rem;
+    }
+    .footer-links a{
+      color:rgba(255,255,255,.7);
+      text-decoration:none;
+      font-weight:400;
+    }
+    .footer-links a:hover{
+      color:#fff;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-main"><em>kennebis</em>.hemp</a>
+    <a href="index.html#shop" class="btn-shop">Back to Shop</a>
+  </header>
+
+  <div class="pg-hero">
+    <svg class="hemp-deco" viewBox="0 0 120 140" fill="none"><g stroke="#7da870" stroke-width="0.7"><path d="M60 80 C60 80 60 55 60 20"/><path d="M60 80 C60 80 35 55 10 40"/><path d="M60 80 C60 80 85 55 110 40"/><path d="M60 55 C60 55 42 35 28 18"/><path d="M60 55 C60 55 78 35 92 18"/><path d="M60 40 C60 40 48 25 38 12"/><path d="M60 40 C60 40 72 25 82 12"/><path d="M60 80 L60 120"/></g></svg>
+    <p class="ew">Support</p>
+    <h1>Frequently Asked <i>Questions</i></h1>
+  </div>
+
+  <div class="content-wrap">
+    <div class="content-inner">
+      
+      <!-- Category 1 -->
+      <h3>About Kennebis Hemp</h3>
+      
+      <div class="faq-item">
+        <h4>What is Kennebis Hemp?</h4>
+        <p class="body-p">Kennebis Hemp is a Nepal-based herbal skincare brand dedicated to creating handcrafted skincare products using carefully selected natural-derived ingredients, including plant oils, botanical extracts, herbal infusions, butters, and waxes. Our goal is to provide effective, nature-inspired skincare while maintaining high standards of quality and transparency.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Are your products natural?</h4>
+        <p class="body-p">Yes. Our products are formulated using natural-derived ingredients sourced from plants and botanicals. Each product page includes a complete ingredient list for full transparency.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Are your products handmade?</h4>
+        <p class="body-p">Yes. Our products are handcrafted in small batches to help maintain quality, freshness, and consistency.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Are your products lab tested?</h4>
+        <p class="body-p">Yes. We conduct laboratory testing on our products to ensure quality and safety standards. Our products are tested through recognized laboratories in Nepal and India, including Nepal Academy of Science and Technology (NAST) and Fare Labs Private Limited, India.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Do your products contain artificial fragrances?</h4>
+        <p class="body-p">No. Kennebis Hemp products do not contain artificial fragrances. Any scent present in our products comes naturally from botanical ingredients, plant oils, herbal infusions, extracts, or essential oils used within the formulation.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Do you test on animals?</h4>
+        <p class="body-p">No. Kennebis Hemp does not test finished products on animals.</p>
+      </div>
+
+      <!-- Category 2 -->
+      <h3>Product Information</h3>
+      
+      <div class="faq-item">
+        <h4>Are your products suitable for sensitive skin?</h4>
+        <p class="body-p">Many of our products are formulated with gentle ingredients suitable for sensitive skin. However, every individual's skin is unique. We recommend reviewing the ingredient list and performing a patch test before full use.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Can I use your products during pregnancy or breastfeeding?</h4>
+        <p class="body-p">If you are pregnant, breastfeeding, or under medical supervision, we recommend consulting your healthcare professional before introducing any new skincare products into your routine.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>How long does it take to see results?</h4>
+        <p class="body-p">Results vary depending on the individual, skin type, skin condition, and consistency of use. Skincare improvements generally require regular and consistent use over time.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Why does my product look slightly different from a previous purchase?</h4>
+        <p class="body-p">Because we use natural-derived ingredients, slight variations in color, aroma, and texture may occur between batches. These natural variations are normal and do not affect product quality or performance.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>What is the shelf life of your products?</h4>
+        <p class="body-p">Most products perform best when used within 6–12 months after opening. Please refer to the product packaging for specific guidance.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>How should I store my products?</h4>
+        <p class="body-p">Store products in a cool, dry place away from direct sunlight, excessive heat, and moisture. Always keep containers tightly closed after use.</p>
+      </div>
+
+      <!-- Category 3 -->
+      <h3>Orders and Payments</h3>
+      
+      <div class="faq-item">
+        <h4>How do I place an order?</h4>
+        <p class="body-p">You can place an order directly through our website by selecting your desired products and completing the checkout process.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>What payment methods do you accept?</h4>
+        <p class="body-p">We currently offer Cash on Delivery (COD) as our payment method. Customers can pay for their orders upon delivery.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Can I modify my order after placing it?</h4>
+        <p class="body-p">If your order has not yet entered processing or shipping, we may be able to assist. Please contact us as soon as possible through our official communication channels.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>Can I cancel my order?</h4>
+        <p class="body-p">Yes. Orders may be cancelled before they are dispatched. Once an order has been shipped or handed over to the courier, cancellation is no longer possible.</p>
+      </div>
+
+      <!-- Category 4 -->
+      <h3>Shipping and Delivery</h3>
+      
+      <div class="faq-item">
+        <h4>Where do you ship?</h4>
+        <p class="body-p">We currently ship throughout Nepal.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>How long does delivery take?</h4>
+        <p class="body-p">Estimated delivery times are:
+          <br/>• <strong>Kathmandu Valley:</strong> 1–3 business days
+          <br/>• <strong>Major Cities:</strong> 2–5 business days
+          <br/>• <strong>Remote Areas:</strong> 4–10 business days
+          <br/><br/>Delivery times may vary depending on location, weather conditions, public holidays, and courier operations.</p>
+      </div>
+      
+      <div class="faq-item">
+        <h4>How can I track my order?</h4>
+        <p class="body-p">Once your order has been dispatched, delivery updates or tracking information will be shared through the contact details associated with your order.</p>
+      </div>
+
+      <!-- Callout Card to visit shop -->
+      <div class="callout-card">
+        <h4>Looking for more interactive features?</h4>
+        <p class="body-p">Access our full database, take the skincare routine quiz, or make active purchases in our main store application.</p>
+        <a href="index.html" class="btn-main">Visit Interactive Shop</a>
+      </div>
+
+    </div>
+  </div>
+
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="index.html#about">Our Story</a>
+      <a href="index.html#privacy">Privacy Policy</a>
+      <a href="index.html#terms">Terms & Conditions</a>
+      <a href="cookie-policy.html">Cookie Policy</a>
+      <a href="disclaimer.html">Disclaimer</a>
+      <a href="index.html#shipping">Shipping Policy</a>
+      <a href="index.html#returns">Refund Policy</a>
+      <a href="accessibility.html">Accessibility</a>
+    </div>
+    <p>&copy; 2026 Kennebis Hemp. All Rights Reserved. Crafted with Mountain Soul in Nepal.</p>
+  </footer>
+
+</body>
+</html>
